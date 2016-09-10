@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 (1..100).each do
-  user = User.create([{username:"竹田光佑"}, {class:"エンジニア"}])
+  users = User.create([{username:"竹田光佑"}, {classifycation:"エンジニア"}])
   idea = Idea.create([{title:"タッチ不要！まばたき検知でページがめくれるアプリを製作します"},{description:"今回行うプロジェクトは、筋ジストロフィー、多発性硬化症、筋萎縮性側索硬化症、不慮の事故による半身、全身不随など、自分の思うように身体を動かせない方でも、他人の手を極力借りることなく、自分のペースで読書が出来るアプリの開発です。
-このプロジェクトを通じて、少しでも多くの方にこういった病気のことを知ってもらえれば幸いです"},{required_user:"奉仕活動ガス機"},{required_user_number:3},user:user])
+このプロジェクトを通じて、少しでも多くの方にこういった病気のことを知ってもらえれば幸いです"},{required_user:"奉仕活動ガス機"},{required_user_number:3},user:users.first])
 end
