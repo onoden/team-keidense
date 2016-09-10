@@ -11,9 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
-<<<<<<< HEAD
 .idea/*
 .env
-/db/database.yml
-.idea
 *.iml
