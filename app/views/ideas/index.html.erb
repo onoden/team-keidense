@@ -10,6 +10,23 @@
   </thead>
 
   <tbody>
+    <div class="boxes">
+      <div class="boxes-title">
+        <img src="">
+        コメント待ちアイディア
+      </div>
+      <% @ideas.each do |idea| %>
+          <div class="single-box">
+            <%= image_tag 'http://coliss.com/wp-content/uploads-201501/2015042111-03-04.png' , class: "box_image" %>
+            <p>
+              <%= idea.title %>
+            </p>
+            <p>
+              <%= idea.user.name%>
+            </p>
+          </div>
+      <% end %>
+    </div>
     <% @ideas.each do |idea| %>
       <tr>
         <td><%= link_to 'Show', idea %></td>
