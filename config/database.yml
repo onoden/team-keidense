@@ -49,6 +49,3 @@ test:
 #
 production:
   <<: *default
-  database: heroku_045ed4047144696
-  username: ENV["HEROKE_USERNAME"]
-  password: ENV["HEROKU_PASSWORD"]
