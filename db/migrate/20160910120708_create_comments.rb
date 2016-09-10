@@ -4,6 +4,8 @@ class CreateComments < ActiveRecord::Migration
       t.string :content
       t.references :idea
       t.references :user
+      t.integer :contribute_user_id
+      t.boolean :good
 
       t.timestamps null: false
     end
