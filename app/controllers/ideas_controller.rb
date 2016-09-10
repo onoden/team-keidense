@@ -4,7 +4,8 @@ class IdeasController < ApplicationController
   # GET /ideas
   # GET /ideas.json
   def index
-    @ideas = Idea.all
+    @ideas = Idea.limit 4
+    @tags = Tag.limit 10
   end
 
   # GET /ideas/1

@@ -17,15 +17,18 @@
       </div>
       <% @ideas.each do |idea| %>
           <div class="single-box">
-            <%= image_tag 'http://coliss.com/wp-content/uploads-201501/2015042111-03-04.png' , class: "box_image" %>
+            <%= link_to(image_tag(idea.idea_images.first.url, class: "box_image"), idea)%>
             <p>
-              <%= idea.title %>
+              <%= link_to idea.title, idea %>
             </p>
             <p>
-              <%= idea.user.name%>
+              <%= link_to idea.user.username || "不明" , idea%>
             </p>
           </div>
       <% end %>
+      <div class="more">
+        もっと見る
+      </div>
     </div>
     <% @ideas.each do |idea| %>
       <tr>

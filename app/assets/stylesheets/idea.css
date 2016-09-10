@@ -1,0 +1,9 @@
+.single-box {
+  width: 120px;
+  float: left;
+}
+
+.single-box img {
+  width: 100px;
+  height: 100px;
+}
