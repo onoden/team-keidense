@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
+  password: ENV["DEVELOPMENT_PASSWORD"]
   socket: /tmp/mysql.sock
 
 development:
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: heroku_045ed4047144696
-  username: b5824cf1d0c7ee
-  password: 0003a276
+  username: ENV["HEROKE_USERNAME"]
+  password: ENV["HEROKU_PASSWORD"]
