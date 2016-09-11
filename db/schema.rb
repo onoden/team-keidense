@@ -11,16 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160910211646) do
+ActiveRecord::Schema.define(version: 20160911001802) do
 
   create_table "comments", force: :cascade do |t|
-    t.string   "content",            limit: 255
-    t.integer  "idea_id",            limit: 4
-    t.integer  "user_id",            limit: 4
-    t.integer  "contribute_user_id", limit: 4
+    t.string   "content",    limit: 255
+    t.integer  "idea_id",    limit: 4
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.boolean  "good"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
   end
 
   create_table "idea_images", force: :cascade do |t|
@@ -95,7 +94,7 @@ ActiveRecord::Schema.define(version: 20160910211646) do
   create_table "users", force: :cascade do |t|
     t.string   "username",        limit: 255
     t.string   "password_digest", limit: 255
-    t.string   "class",           limit: 255
+    t.string   "classifycation",  limit: 255
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
   end
