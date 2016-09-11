@@ -15,6 +15,6 @@ profiles = Profile.create[{name:"竹田光佑",user:users.first}]
 
   images = IdeaImage.create([{url:"https://readyfor-img.s3.amazonaws.com/project_photos/7981/medium/9c00a0a049c6d827e6ecbf3f022b5bbc83daa61e.jpg?1466103531",idea:idea.first}])
   (1..5).each do
-    comments = Comment.create([{content:"素晴らしい!"},{idea:idea.first},{good:false}])
+    comments = Comment.create([{content:"素晴らしい!",idea:idea.first,good:false}])
   end
 end
