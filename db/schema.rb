@@ -53,6 +53,20 @@ ActiveRecord::Schema.define(version: 20160911001802) do
     t.datetime "updated_at",                       null: false
   end
 
+  create_table "pictures", force: :cascade do |t|
+    t.string   "title",                limit: 255
+    t.string   "description",          limit: 255
+    t.string   "required_user",        limit: 255
+    t.string   "required_user_number", limit: 255
+    t.integer  "user_id",              limit: 4
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.string   "photo_file_name",      limit: 255
+    t.string   "photo_content_type",   limit: 255
+    t.integer  "photo_file_size",      limit: 4
+    t.datetime "photo_updated_at"
+  end
+
   create_table "profiles", force: :cascade do |t|
     t.string   "name",         limit: 255
     t.string   "introduction", limit: 255
