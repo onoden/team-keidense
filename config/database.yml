@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
+  password:
   # password: ENV["DEVELOPMENT_PASSWORD"]
-  password: Takataka0926
   socket: /tmp/mysql.sock
 
 development:
