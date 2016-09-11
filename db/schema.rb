@@ -14,12 +14,13 @@
 ActiveRecord::Schema.define(version: 20160911001802) do
 
   create_table "comments", force: :cascade do |t|
-    t.string   "content",    limit: 255
-    t.integer  "idea_id",    limit: 4
-    t.integer  "user_id",    limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "content",            limit: 255
+    t.integer  "idea_id",            limit: 4
+    t.integer  "user_id",            limit: 4
+    t.integer  "contribute_user_id", limit: 4
     t.boolean  "good"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
   create_table "idea_images", force: :cascade do |t|
