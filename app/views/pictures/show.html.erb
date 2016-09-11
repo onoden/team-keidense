@@ -5,14 +5,19 @@
 <div class="row">
 <div class="col-md-10">
   <div class="main-box">
+    <div class="idea-image">
      <%= image_tag @picture.photo.url(:medium) %>
+   </div>
     <p>
+      <%= label_tag 'タイトル' %>
       <%= @picture.title %>
     </p>
     <p>
+      <%= label_tag 'アピール文' %>
       <%= @picture.description %>
     </p>
     <p>
+      <%= label_tag '求めている人物' %>
       <%= @picture.required_user %>
     </p>
   </div>
