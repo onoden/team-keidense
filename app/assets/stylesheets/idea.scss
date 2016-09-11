@@ -9,6 +9,7 @@
   margin: 0;
   width: 98px;
   height: 98px;
+  z-index: 100;
 }
 
 .boxes {
@@ -30,7 +31,8 @@
 }
 
 .maincontent {
-  margin-left: 200px;
+  width: 580px;
+  margin-left: 220px;
   margin-right: 200px;
 }
 
@@ -48,10 +50,20 @@
   margin: 20px 10px 0 10px;
 }
 
+
 .right-box {
   position: fixed;
-}
+  left: 780px;
 
+  width: 200px;
+  height: 593px;
+  margin: 20px 10px 0 10px;
+  background-image: url("assets/top/bakground_rank.png");
+  border: 1px solid cadetblue;
+}
+.right-box .single-box {
+  padding: 10px;
+}
 
 .boxes {
   margin:20px;
