@@ -1,10 +1,12 @@
 
 .single-box {
-  width: 120px;
+  width: 180px;
+
 }
 
 .single-box img {
 
+  margin: 0;
   width: 98px;
   height: 98px;
 }
@@ -40,6 +42,38 @@
   padding-top: 13px;
 }
 
+.left-box {
+
+  position:fixed;
+  margin: 20px 10px 0 10px;
+}
+
+.right-box {
+  position: fixed;
+}
+
+
 .boxes {
   margin:20px;
 }
+
+.more {
+  text-align: right;
+}
+.boxes-title img{
+  width:16px;
+  height:16px;
+  margin: 10px 10px 10px 10px;
+  font-style:oblique;
+}
+
+.idea_title {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.idea_username {
+  text-align: center;
+  color: #78848C;
+}
+
