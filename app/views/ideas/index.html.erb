@@ -22,6 +22,28 @@
     <img src="assets/top/background_pro.png">
 
   </div>
+  
+  <div class="right-box">
+    <img src="assets/top/bakground_rank.png" id="rightbackground">
+    <div class="boxes-title">
+      <%= image_tag  "top/ic_new.png" ,{class:"ic_new"}%>
+      コメント待ちアイディア
+    </div>
+    <div class="">
+      <% @ideas.each do |idea| %>
+          <div class="single-box flex-item">
+            <%= link_to(image_tag(idea.idea_images.first.url, class: "box_image"), idea)%>
+            <p class="idea_title">
+              <%= link_to idea.title, idea %>
+            </p>
+            <p class="idea_username">
+              <%= link_to idea.user.username || "不明" , idea%>
+            </p>
+          </div>
+      <% end %>
+    </div>
+
+  </div>
 
   <div class="maincontent">
     <div class="boxes">

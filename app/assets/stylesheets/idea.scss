@@ -30,7 +30,8 @@
 }
 
 .maincontent {
-  margin-left: 200px;
+  width: 580px;
+  margin-left: 220px;
   margin-right: 200px;
 }
 
@@ -48,10 +49,19 @@
   margin: 20px 10px 0 10px;
 }
 
+
 .right-box {
   position: fixed;
+  left: 780px;
+
+  width: 200px;
+  height: 593px;
+  margin: 20px 10px 0 10px;
 }
 
+#rightbackground {
+  position: absolute;
+}
 
 .boxes {
   margin:20px;
