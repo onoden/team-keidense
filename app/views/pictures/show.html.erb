@@ -3,34 +3,25 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
 <div class="row">
-<div class="col-md-8">
-   <%= image_tag @picture.photo.url(:medium) %>
-  <p>
-    <%= @picture.title %>
-  </p>
-  <p>
-    <%= @picture.description %>
-  </p>
-  <p>
-    <%= @picture.required_user %>
-  </p>
-  aaaaaaa
+<div class="col-md-10">
+  <div class="main-box">
+     <%= image_tag @picture.photo.url(:medium) %>
+    <p>
+      <%= @picture.title %>
+    </p>
+    <p>
+      <%= @picture.description %>
+    </p>
+    <p>
+      <%= @picture.required_user %>
+    </p>
+  </div>
 </div>
 <% if false %>
 <%= link_to 'Edit', edit_picture_path(@picture) %>
 <%= link_to 'Back', pictures_path %>
 <% end %>
-<div class="col-md-4">
-    <% @pictures.each do |picture| %>
-     <div style="width:500px;border:1px solid #ccc;margin:5px">
-       <div style="float:left">
-         <h2 ><%= picture.title %></h2>
-       </div>
-       <div style="clear:both">
-         <pre><%= picture.comments.content %></pre>
-       </div>
-     </div>
-   <% end %>
+<div class="col-md-2">
    aaaa
 </div>
 </div>
