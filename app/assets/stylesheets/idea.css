@@ -5,8 +5,8 @@
 
 .single-box img {
 
-  width: 100px;
-  height: 100px;
+  width: 98px;
+  height: 98px;
 }
 
 .boxes {
@@ -22,7 +22,20 @@
   display: flex;
   justify-content: space-between;
 }
-
 #idea-boxes {
+
   display: table;
+}
+
+.maincontent {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#search {
+
+}
+
+.boxes {
+  margin:20px;
 }
