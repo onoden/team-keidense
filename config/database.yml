@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: root
   # password: ENV["DEVELOPMENT_PASSWORD"]
-  password: Takataka0926
+  password: csk2539
   socket: /tmp/mysql.sock
 
 development:
