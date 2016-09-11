@@ -1,5 +1,6 @@
 class Picture < ActiveRecord::Base
-  belongs_to :user
+  belongs_to :user, polymorphic: true
+  has_many :comments
   # photoをattachファイルとする。stylesで画像サイズを定義できる
   has_attached_file :photo, styles: { medium: "300x300>", thumb: "100x100>" }
 

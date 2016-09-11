@@ -18,4 +18,4 @@ profiles = Profile.create[{name:"竹田光佑",user:users.first}]
   (1..5).each do
     comments = Comment.create([{content:"素晴らしい!",idea:idea.first,good:false}])
   end
-end
+# end

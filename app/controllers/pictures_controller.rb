@@ -11,6 +11,7 @@ class PicturesController < ApplicationController
   # GET /pictures/1.json
   def show
     @picture = Picture.find(params[:id])
+    @pictures = Picture.all
   end
 
   # GET /pictures/new
