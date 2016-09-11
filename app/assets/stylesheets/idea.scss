@@ -9,6 +9,7 @@
   margin: 0;
   width: 98px;
   height: 98px;
+  z-index: 100;
 }
 
 .boxes {
@@ -57,10 +58,11 @@
   width: 200px;
   height: 593px;
   margin: 20px 10px 0 10px;
+  background-image: url("assets/top/bakground_rank.png");
+  border: 1px solid cadetblue;
 }
-
-#rightbackground {
-  position: absolute;
+.right-box .single-box {
+  padding: 10px;
 }
 
 .boxes {
