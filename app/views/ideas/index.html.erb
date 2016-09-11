@@ -10,22 +10,25 @@
   </thead>
 
   <tbody>
-    <div class="boxes">
+
+    <div class="boxes" id="">
       <div class="boxes-title">
         <img src="">
         コメント待ちアイディア
       </div>
-      <% @ideas.each do |idea| %>
-          <div class="single-box">
-            <%= link_to(image_tag(idea.idea_images.first.url, class: "box_image"), idea)%>
-            <p>
-              <%= link_to idea.title, idea %>
-            </p>
-            <p>
-              <%= link_to idea.user.username || "不明" , idea%>
-            </p>
-          </div>
-      <% end %>
+      <div id="idea-boxes">
+        <% @ideas.each do |idea| %>
+            <div class="single-box flex-item">
+              <%= link_to(image_tag(idea.idea_images.first.url, class: "box_image"), idea)%>
+              <p>
+                <%= link_to idea.title, idea %>
+              </p>
+              <p>
+                <%= link_to idea.user.username || "不明" , idea%>
+              </p>
+            </div>
+        <% end %>
+      </div>
       <div class="more">
         もっと見る
       </div>

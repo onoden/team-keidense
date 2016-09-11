@@ -1,9 +1,28 @@
+
 .single-box {
   width: 120px;
-  float: left;
 }
 
 .single-box img {
+
   width: 100px;
   height: 100px;
+}
+
+.boxes {
+  width:500px;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#idea-boxes {
+  display: table;
 }
