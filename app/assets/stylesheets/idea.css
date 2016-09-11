@@ -33,7 +33,11 @@
 }
 
 #search {
-
+  background-color: #85B7CC;
+  width: 100%;
+  height :50px;
+  text-align: center;
+  padding-top: 13px;
 }
 
 .boxes {
